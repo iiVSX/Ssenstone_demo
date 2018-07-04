@@ -17,7 +17,7 @@
         </activity>
         <activity
             android:name=".Activity.HomeActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
     </application>
 
