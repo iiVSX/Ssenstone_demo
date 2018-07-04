@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ssenstone_bank</string>
+
+    <string name="pay">페이</string>
+    <string name="transfer">이체</string>
+    <string name="lend">대출</string>
+    <string name="insurance">보험</string>
 </resources>

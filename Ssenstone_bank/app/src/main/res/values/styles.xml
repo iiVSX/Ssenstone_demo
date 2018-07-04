@@ -1,14 +1,22 @@
 <resources>
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="yanoljaTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/loading_img</item>
+        <!--<item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>-->
+        <!--<item name="android:buttonStyle">@style/AppTheme.Widget.Button</item>-->
+        <!--<item name="android:editTextStyle">@style/AppTheme.Widget.EditText</item>-->
     </style>
 
-    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar">
-        <item name="android:windowBackground">@drawable/loading_img</item>
-    </style>
+    <!--<style name="yanoljaTheme.Widget"/>-->
+    <!--<style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">-->
+        <!--<item name="text_fontPath">fonts/yanolja.ttf</item>-->
+    <!--</style>-->
+    <!--<style name="AppTheme.Widget.Button" parent="android:Widget.Holo.Light.TextView">-->
+        <!--<item name="button_fontPath">fonts/yanolja.ttf</item>-->
+    <!--</style>-->
+    <!--<style name="AppTheme.Widget.EditText" parent="android:Widget.Holo.Light.TextView">-->
+        <!--<item name="editText_fontPath">fonts/yanolja.ttf</item>-->
+    <!--</style>-->
+
+
 
 </resources>
