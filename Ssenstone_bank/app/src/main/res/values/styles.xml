@@ -1,6 +1,10 @@
 <resources>
-    <style name="yanoljaTheme" parent="@android:style/Theme.Light.NoTitleBar">
-        <item name="android:windowBackground">@drawable/loading_img</item>
+    <style name="loadingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/loading_img</item>
+    </style>
+
+    <style name="yanoljaTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg</item>
         <!--<item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>-->
         <!--<item name="android:buttonStyle">@style/AppTheme.Widget.Button</item>-->
         <!--<item name="android:editTextStyle">@style/AppTheme.Widget.EditText</item>-->
