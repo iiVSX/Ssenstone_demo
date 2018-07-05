@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="paybackWay">
+        <item>상환1</item>
+        <item>상환2</item>
+        <item>상환3</item>
+    </string-array>
+    <string-array name="insuranceName">
+        <item>보험1</item>
+        <item>보험2</item>
+        <item>보험3</item>
+        <item>보험4</item>
+    </string-array>
+    <string-array name="insuranceType">
+        <item>보험플랜1</item>
+        <item>보험플랜2</item>
+        <item>보험플랜3</item>
+        <item>보험플랜4</item>
+    </string-array>
+</resources>

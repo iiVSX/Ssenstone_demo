@@ -1,20 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textSize="40sp"
-            android:text="초특가 야놀자"/>
+            android:id="@+id/insurance_title"
+            style="@style/title"
+            android:text="@string/insurance_title" />
 
+        <RelativeLayout
+            android:id="@+id/insurance_container"
+            style="@style/white_container"
+            android:layout_below="@+id/insurance_title">
+
+            <TableLayout
+                android:id="@+id/insurance_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <TableRow>
+
+                    <TextView android:text="2018-01-01  14:00" />
+                </TableRow>
+
+                <TextView
+                    android:text="보험 상품/가입자 정보"
+                    android:textSize="20sp"/>
+
+                <TableRow>
+
+                    <Spinner
+                        android:id = "@+id/insuranceName"
+                        android:layout_height = "40dp"
+                        android:layout_width="match_parent"
+                        >
+
+                    </Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <Spinner
+                        android:id = "@+id/insuranceType"
+                        android:layout_height = "40dp"
+                        android:layout_width="match_parent"
+                        >
+
+                    </Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView>
+                        android:layout_marginTop = "20dp"
+                        android:text="생년월일"
+                        android:textSize="20sp"
+                    </TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="성별"
+                        android:textSize="20sp"/>
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:text = "남성"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:text = "여성"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"/>
+                    </RadioGroup>
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text ="보험신청"
+                android:background="#4BAADD"
+                android:textColor="@color/white"
+                android:textSize = "20sp"
+                >
+            </Button>
+
+        </RelativeLayout>
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
