@@ -54,6 +54,7 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(insurance_intent);
                     break;
                 default:
+                    Log.d(TAG, "Wrong Button Clicked");
                     break;
             }
         }

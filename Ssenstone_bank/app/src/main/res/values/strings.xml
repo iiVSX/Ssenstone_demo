@@ -9,4 +9,22 @@
     <string name="lend_title">대 출</string>
     <string name="insurance">보험</string>
     <string name="insurance_title">보 험</string>
+
+    <string name="payment_method">구매 방법</string>
+    <string name="choose_card">카드 선택</string>
+
+    <string name="please_choose_payment">구매 방법을 선택해주세요</string>
+    <string name="please_choose_card">구매 방법을 선택해주세요</string>
+
+    <string name="credit_card">신용카드</string>
+    <string name="ssen_pay">쎈 페이</string>
+    <string name="payco">페이코</string>
+    <string name="kakao_pay">카카오 페이</string>
+
+    <string name="credit_kb">국민카드</string>
+    <string name="credit_shinhan">신한카드</string>
+    <string name="credit_samsung">삼성카드</string>
+    <string name="credit_woori">우리카드</string>
+
+    <string name="purchase">결제하기</string>
 </resources>
