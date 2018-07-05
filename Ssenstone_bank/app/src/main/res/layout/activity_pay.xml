@@ -15,6 +15,32 @@
         <RelativeLayout
             android:id="@+id/pay_container"
             style="@style/white_container">
+
+            <TableLayout
+                android:id="@+id/pay_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TableRow>
+                    <TextView
+                        android:text="2018-01-01  14:00"
+                        />
+                </TableRow>
+
+                <TableRow>
+                </TableRow>
+
+                <TableRow>
+                </TableRow>
+
+                <TableRow>
+                </TableRow>
+
+            </TableLayout>
+
         </RelativeLayout>
 
 
