@@ -1,20 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textSize="40sp"
-            android:text="초특가 야놀자"/>
+            android:id="@+id/lend_title"
+            style="@style/title"
+            android:text="@string/lend_title" />
+
+        <RelativeLayout
+            android:id="@+id/lend_container"
+            style="@style/white_container"
+            android:layout_below="@+id/lend_title">
+
+            <TableLayout
+                android:id="@+id/lend_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <TableRow>
+
+                    <TextView android:text="2018-01-01  14:00" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:text="대출 금액"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/amountMoneyLend"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:text="만원"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="대출 금리"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/interestRate"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:text="%"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:text="상환 방식"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Spinner
+                        android:id="@+id/payBackMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="대출하기"
+                android:background="#4BAADD"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+
+        </RelativeLayout>
+
 
     </RelativeLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>

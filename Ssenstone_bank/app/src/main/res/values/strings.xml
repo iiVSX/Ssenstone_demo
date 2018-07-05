@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">Ssenstone_bank</string>
-
     <string name="pay">페이</string>
     <string name="pay_title">페 이</string>
     <string name="transfer">이체</string>
     <string name="transfer_title">이 체</string>
     <string name="lend">대출</string>
-    <string name="lend_title">대 출</string>
     <string name="insurance">보험</string>
     <string name="insurance_title">보 험</string>
+    <string name="lend_title">대 출</string>
 </resources>
