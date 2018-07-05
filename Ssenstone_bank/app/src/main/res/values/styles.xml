@@ -5,22 +5,22 @@
 
     <style name="yanoljaTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/bg</item>
-        <!--<item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>-->
-        <!--<item name="android:buttonStyle">@style/AppTheme.Widget.Button</item>-->
-        <!--<item name="android:editTextStyle">@style/AppTheme.Widget.EditText</item>-->
     </style>
 
-    <!--<style name="yanoljaTheme.Widget"/>-->
-    <!--<style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">-->
-        <!--<item name="text_fontPath">fonts/yanolja.ttf</item>-->
-    <!--</style>-->
-    <!--<style name="AppTheme.Widget.Button" parent="android:Widget.Holo.Light.TextView">-->
-        <!--<item name="button_fontPath">fonts/yanolja.ttf</item>-->
-    <!--</style>-->
-    <!--<style name="AppTheme.Widget.EditText" parent="android:Widget.Holo.Light.TextView">-->
-        <!--<item name="editText_fontPath">fonts/yanolja.ttf</item>-->
-    <!--</style>-->
+    <style name="title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">100dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
 
-
-
+    <style name="white_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_below">@id/pay_title</item>
+    </style>
 </resources>

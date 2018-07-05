@@ -8,12 +8,15 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textSize="40sp"
-            android:text="초특가 야놀자"/>
+            android:id="@+id/pay_title"
+            style="@style/title"
+            android:text="@string/pay_title"/>
+
+        <RelativeLayout
+            android:id="@+id/pay_container"
+            style="@style/white_container">
+        </RelativeLayout>
+
 
     </RelativeLayout>
 
