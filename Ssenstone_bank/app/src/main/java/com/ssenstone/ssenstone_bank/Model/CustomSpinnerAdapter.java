@@ -53,9 +53,4 @@ public class CustomSpinnerAdapter extends BaseAdapter implements SpinnerAdapter{
         textView.setTextColor(ContextCompat.getColor(mContext, R.color.gray));
         return textView;
     }
-
-//    @Override
-//    public View getDropDownView(int position, View counterView, ViewGroup parent){
-//        Text text =
-//    }
 }

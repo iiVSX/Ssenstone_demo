@@ -3,8 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,132 +12,138 @@
             style="@style/title"
             android:text="@string/pay_title"/>
 
-        <RelativeLayout
-            android:id="@+id/pay_container"
+        <ScrollView
             android:layout_below="@id/pay_title"
-            style="@style/white_container">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <TableLayout
-                android:id="@+id/pay_info"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                >
+            <RelativeLayout
+                android:id="@+id/pay_container"
+                style="@style/white_container">
 
-                <TableRow>
-                    <TextView
-                        android:text="2018-01-01  14:00"
-                        android:textColor="#000000"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:textSize="30sp"
-                        />
-                </TableRow>
+                <TableLayout
+                    android:id="@+id/pay_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
 
-                <TableRow>
-                    <TextView
-                        android:text="오버워치"
-                        android:textColor="#000000"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:textSize="30sp"
-                        />
-                </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="2018-01-01  14:00"
+                            android:textColor="#000000"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="30sp"
+                            />
+                    </TableRow>
 
-                <TableRow>
-                    <TextView
-                        android:text="45,000원"
-                        android:textColor="#000000"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:textSize="30sp"
-                        />
-                </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="오버워치"
+                            android:textColor="#000000"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="30sp"
+                            />
+                    </TableRow>
 
-                <TableRow>
-                    <TextView
-                        android:text="블리자드 액티비전 코리아"
-                        android:textColor="#6F6F6F"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:textSize="28sp"
-                        />
-                </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="45,000원"
+                            android:textColor="#000000"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="30sp"
+                            />
+                    </TableRow>
 
-                <TableRow
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp">
-                    <View
-                        android:background="@drawable/gray_separator"
-                        android:layout_width="wrap_content"
-                        android:layout_height="3dp"
-                        >
+                    <TableRow>
+                        <TextView
+                            android:text="블리자드 액티비전 코리아"
+                            android:textColor="#6F6F6F"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="28sp"
+                            />
+                    </TableRow>
 
-                    </View>
-                </TableRow>
+                    <TableRow
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <View
+                            android:background="@drawable/gray_separator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="3dp"
+                            >
 
-                <TableRow>
-                    <TextView
-                        android:text="@string/payment_method"
-                        android:textColor="#6F6F6F"
-                        android:paddingTop="5dp"
-                        android:paddingBottom="5dp"
-                        android:textSize="28sp"
-                        />
-                </TableRow>
+                        </View>
+                    </TableRow>
 
-                <TableRow
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp">
-                    <Spinner
-                        android:id="@+id/spinner_payment_method"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:prompt="@string/please_choose_payment"/>
-                </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/payment_method"
+                            android:textColor="#6F6F6F"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="28sp"
+                            />
+                    </TableRow>
 
-                <TableRow
-                    android:id="@+id/row_credit_title"
-                    android:visibility="gone">
-                    <TextView
-                        android:text="@string/choose_card"
-                        android:textColor="#6F6F6F"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:textSize="28sp"
-                        />
-                </TableRow>
-                <TableRow
-                    android:id="@+id/row_credit_choose"
-                    android:visibility="gone">
-                    <Spinner
-                        android:id="@+id/spinner_credit_card"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:prompt="@string/please_choose_card"/>
-                </TableRow>
+                    <TableRow
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+                        <Spinner
+                            android:id="@+id/spinner_payment_method"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:prompt="@string/please_choose_payment"/>
+                    </TableRow>
 
-            </TableLayout>
-            <Button
-                android:id="@+id/purchase_button"
-                android:layout_below="@id/pay_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/purchase"
-                android:textSize="70sp"
-                android:padding="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_centerHorizontal="true"
-                android:gravity="center_vertical|center_horizontal"
-                android:background="@drawable/rounded_square_blue"
-                android:textColor="@color/white"/>
+                    <TableRow
+                        android:id="@+id/row_credit_title"
+                        android:visibility="gone">
+                        <TextView
+                            android:text="@string/choose_card"
+                            android:textColor="#6F6F6F"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="28sp"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/row_credit_choose"
+                        android:visibility="gone">
+                        <Spinner
+                            android:id="@+id/spinner_credit_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:prompt="@string/please_choose_card"/>
+                    </TableRow>
 
-        </RelativeLayout>
+                </TableLayout>
+                <Button
+                    android:id="@+id/purchase_button"
+                    android:layout_below="@id/pay_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/purchase"
+                    android:textSize="70sp"
+                    android:padding="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/rounded_square_blue"
+                    android:textColor="@color/white"/>
 
+            </RelativeLayout>
+
+        </ScrollView>
 
     </RelativeLayout>
 
