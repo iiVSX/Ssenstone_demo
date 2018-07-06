@@ -31,7 +31,7 @@ public class LendActivity extends AppCompatActivity {
 
         paybackMethod.setAdapter(spinner_adapter);
 
-        Button button = findViewById(R.id.lend_button);
+        Button button = findViewById(R.id.lend_lend_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

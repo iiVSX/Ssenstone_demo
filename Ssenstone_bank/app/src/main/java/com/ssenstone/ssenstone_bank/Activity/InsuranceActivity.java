@@ -16,27 +16,25 @@ public class InsuranceActivity  extends AppCompatActivity {
     private static String TAG = "InsuranceActivity";
     private Spinner insuranceName = null;
     private Spinner insuranceType = null;
-    private ArrayAdapter<String> insuranceAdapter = null;
+    private ArrayAdapter<CharSequence> insuranceNameAdapter = null;
+    private ArrayAdapter<CharSequence> insuranceTypeAdapter = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insurance);
 
-        insuranceName = (Spinner)findViewById(R.id.insuranceName);
+        insuranceName = findViewById(R.id.insuranceName);
+        insuranceNameAdapter = ArrayAdapter.createFromResource(this, R.array.insuranceName ,android.R.layout.simple_spinner_item);
+        insuranceNameAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        insuranceName.setAdapter(insuranceNameAdapter);
 
-        insuranceAdapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item, (String[])getResources().getStringArray(R.array.insuranceName));
-        insuranceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        insuranceType = findViewById(R.id.insuranceType);
+        insuranceTypeAdapter = ArrayAdapter.createFromResource(this, R.array.insuranceType ,android.R.layout.simple_spinner_item);
+        insuranceTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        insuranceType.setAdapter(insuranceTypeAdapter);
 
-        insuranceType.setAdapter(insuranceAdapter);
-
-        insuranceType = (Spinner)findViewById(R.id.insuranceType);
-
-        insuranceAdapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item, (String[])getResources().getStringArray(R.array.insuranceType));
-        insuranceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        insuranceType.setAdapter(insuranceAdapter);
-
-        Button button = findViewById(R.id.lend_button);
+        Button button = findViewById(R.id.apply_insurance);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

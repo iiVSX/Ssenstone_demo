@@ -12,6 +12,7 @@
 
     <string name="please_choose_payment">구매 방법을 선택해주세요</string>
     <string name="please_choose_card">구매 방법을 선택해주세요</string>
+    <string name="please_choose_bank">은행을 선택해주세요</string>
 
     <string name="credit_card">신용카드</string>
     <string name="ssen_pay">쎈 페이</string>
@@ -23,7 +24,16 @@
     <string name="credit_samsung">삼성카드</string>
     <string name="credit_woori">우리카드</string>
 
+    <string name="bank_kb">국민은행</string>
+    <string name="bank_shinhan">신한은행</string>
+    <string name="bank_woori">우리은행</string>
+
     <string name="purchase">결제하기</string>
+
+    <string name="transfer_amount">이체 금액</string>
+    <string name="choose_bank">은행 선택</string>
+    <string name="receiver_account_num">상대방 계좌번호</string>
+    <string name="receiver_name">받는 분</string>
 
     <string name="lend_title">대 출</string>
 </resources>
