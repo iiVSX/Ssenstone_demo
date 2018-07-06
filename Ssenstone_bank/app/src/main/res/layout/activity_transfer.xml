@@ -27,13 +27,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    >
+                    android:layout_marginRight="20dp">
 
                     <TableRow>
-
                         <TextView
                             android:id="@+id/my_account_num"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:paddingBottom="10dp"
                             android:paddingTop="10dp"
                             android:text="나의 계좌번호: "
@@ -42,8 +43,10 @@
                             android:textSize="25sp" />
                     </TableRow>
 
-                    <TableRow>
+                    <TableRow android:layout_width="match_parent">
                         <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
                             android:text="@string/transfer_amount"
                             android:textColor="#000000"
                             android:paddingTop="10dp"
@@ -53,28 +56,29 @@
                     </TableRow>
 
                     <TableRow android:id="@+id/row_transfer_amount"
-                        android:layout_width="match_parent"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp">
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="#EAEAEA">
                             <EditText
                                 android:id="@+id/transfer_amount"
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:inputType="number"
                                 android:singleLine="true"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="2"
+                                android:layout_weight="8"
                                 android:textSize="30sp"
                                 android:textColor="@color/gray"
                                 android:hint="50,000"/>
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:textColor="#000000"
+                                android:textAlignment="center"
                                 android:textSize="30sp"
                                 android:text="만원"/>
                         </LinearLayout>
@@ -85,6 +89,7 @@
                         android:paddingBottom="10dp">
                         <TextView
                             android:text="@string/choose_bank"
+                            android:layout_weight="1"
                             android:textColor="#000000"
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
@@ -102,7 +107,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="25sp"
-                            android:prompt="@string/please_choose_payment"/>
+                            android:prompt="@string/please_choose_payment"
+                            android:layout_weight="1"/>
                     </TableRow>
 
                     <TableRow android:paddingTop="10dp"
@@ -113,12 +119,14 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="30sp"
+                            android:layout_weight="1"
                             />
                     </TableRow>
 
                     <TableRow android:id="@+id/row_receiver_account">
                         <EditText
                             android:id="@+id/receiver_account"
+                            android:layout_weight="1"
                             android:background="#EAEAEA"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -138,10 +146,12 @@
                             android:paddingTop="10dp"
                             android:paddingBottom="10dp"
                             android:textSize="30sp"
+                            android:layout_weight="1"
                             />
                     </TableRow>
                     <TableRow android:id="@+id/row_receiver">
                         <EditText
+                            android:layout_weight="1"
                             android:id="@+id/receiver"
                             android:background="#EAEAEA"
                             android:layout_width="match_parent"
