@@ -8,18 +8,170 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/transfer_title"
             style="@style/title"
             android:text="@string/transfer_title"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:textSize="40sp"
-            android:text="초특가 야놀자"/>
+        <ScrollView
+            android:layout_below="@id/transfer_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/transfer_container"
+                style="@style/white_container">
+
+                <TableLayout
+                    android:id="@+id/transfer_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/my_account_num"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="나의 계좌번호: "
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="25sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/transfer_amount"
+                            android:textColor="#000000"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="30sp"
+                            />
+                    </TableRow>
+
+                    <TableRow android:id="@+id/row_transfer_amount"
+                        android:layout_width="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#EAEAEA">
+                            <EditText
+                                android:id="@+id/transfer_amount"
+                                android:layout_width="0dp"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:textSize="30sp"
+                                android:textColor="@color/gray"
+                                android:hint="50,000"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="#000000"
+                                android:textSize="30sp"
+                                android:text="만원"/>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:text="@string/choose_bank"
+                            android:textColor="#000000"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="30sp"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+                        <Spinner
+                            android:id="@+id/spinner_bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:prompt="@string/please_choose_payment"/>
+                    </TableRow>
+
+                    <TableRow android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:text="@string/receiver_account_num"
+                            android:textColor="#000000"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="30sp"
+                            />
+                    </TableRow>
+
+                    <TableRow android:id="@+id/row_receiver_account">
+                        <EditText
+                            android:id="@+id/receiver_account"
+                            android:background="#EAEAEA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:padding="10dp"
+                            android:textSize="30sp"
+                            android:textColor="@color/gray"
+                            android:hint="318002-04-123456"/>
+                    </TableRow>
+
+
+                    <TableRow android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:text="@string/receiver_name"
+                            android:textColor="#000000"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="30sp"
+                            />
+                    </TableRow>
+                    <TableRow android:id="@+id/row_receiver">
+                        <EditText
+                            android:id="@+id/receiver"
+                            android:background="#EAEAEA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textSize="30sp"
+                            android:textColor="@color/gray"
+                            android:padding="10dp"
+                            android:hint="홍길동"/>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/do_transfer_button"
+                    android:layout_below="@id/transfer_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transfer"
+                    android:textSize="70sp"
+                    android:padding="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/rounded_square_blue"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
 
     </RelativeLayout>
 
