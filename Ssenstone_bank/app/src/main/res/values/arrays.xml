@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="paybackWay">
-        <item >상환 방식을 선택하세요</item>
-        <item >만기 일시 상환</item>
-        <item >원금 균등 상환</item>
-        <item >원리금 균등 상환</item>
+
+        <item>상환1</item>
+        <item>상환2</item>
+        <item>상환3</item>
     </string-array>
-
-    <string-array name ="insuranceName">
-        <item >(무)ING 굿스타트 변액적립보험</item>
-        <item >Chubb라이프 변액적립보험 무배당</item>
-        <item >(무)THE 좋은 프레스티지 변액보험</item>
-        <item >희망파트너저축보험 무배당 1804</item>
-        <item >삼성생명 New에이스저축보험 B2.4(무배당)</item>
-
+    <string-array name="insuranceName">
+        <item>보험1</item>
+        <item>보험2</item>
+        <item>보험3</item>
+        <item>보험4</item>
     </string-array>
-
-    <string-array name = "insuranceType">
-        <item >1종 고객설계형</item>
-        <item >2종 운용사경쟁형</item>
+    <string-array name="insuranceType">
+        <item>보험플랜1</item>
+        <item>보험플랜2</item>
+        <item>보험플랜3</item>
+        <item>보험플랜4</item>
     </string-array>
 </resources>
