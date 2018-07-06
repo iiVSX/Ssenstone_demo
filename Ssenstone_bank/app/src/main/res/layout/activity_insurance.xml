@@ -29,19 +29,23 @@
 
                 <TableRow>
 
-                    <TextView android:text="2018-01-01  14:00" />
+                    <TextView android:text="2018-01-01  14:00"
+                        android:textSize = "30sp"/>
                 </TableRow>
 
                 <TextView
+                    android:layout_marginTop="20dp"
                     android:text="보험 상품/가입자 정보"
-                    android:textSize="20sp"/>
+                    android:textSize="30sp"/>
 
                 <TableRow>
 
                     <Spinner
+                        android:layout_marginTop="20dp"
                         android:id = "@+id/insuranceName"
                         android:layout_height = "40dp"
                         android:layout_width="match_parent"
+                        android:textSize = "50sp"
                         >
 
                     </Spinner>
@@ -50,28 +54,40 @@
                 <TableRow>
 
                     <Spinner
+                        android:layout_marginTop="20dp"
                         android:id = "@+id/insuranceType"
                         android:layout_height = "40dp"
                         android:layout_width="match_parent"
+                        android:textSize = "30sp"
                         >
 
                     </Spinner>
-                </TableRow>
-
-                <TableRow>
-
-                    <TextView>
-                        android:layout_marginTop = "20dp"
-                        android:text="생년월일"
-                        android:textSize="20sp"
-                    </TextView>
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop = "20dp"
+                        android:text="생년월일"
+                        android:textSize="30sp"
+                        android:layout_weight="1"
+                        >
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
                         android:text="성별"
-                        android:textSize="20sp"/>
+                        android:textSize="30sp"/>
 
                     <RadioGroup
                         android:orientation="horizontal"
@@ -82,13 +98,13 @@
                         <RadioButton
                             android:layout_width="0dp"
                             android:text = "남성"
-                            android:textSize="20sp"
+                            android:textSize="30sp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"/>
                         <RadioButton
                             android:layout_width="0dp"
                             android:text = "여성"
-                            android:textSize="20sp"
+                            android:textSize="30sp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="30dp"/>
@@ -106,7 +122,7 @@
                 android:text ="보험신청"
                 android:background="#4BAADD"
                 android:textColor="@color/white"
-                android:textSize = "20sp"
+                android:textSize = "30sp"
                 >
             </Button>
 

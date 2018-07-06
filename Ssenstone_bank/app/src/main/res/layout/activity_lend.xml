@@ -29,63 +29,75 @@
 
                 <TableRow>
 
-                    <TextView android:text="2018-01-01  14:00" />
+                    <TextView android:text="2018-01-01  14:00"
+                        android:textSize="20dp"/>
                 </TableRow>
 
 
                 <TableRow>
 
                     <TextView
+                        android:layout_marginTop="20dp"
                         android:text="대출 금액"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </TableRow>
 
-                <TableRow>
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    >
 
                     <EditText
+                        android:layout_marginTop="10dp"
                         android:id="@+id/amountMoneyLend"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:inputType="number" />
 
                     <TextView
+                        android:layout_marginTop="20dp"
                         android:text="만원"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
+                        android:layout_marginTop="20dp"
                         android:text="대출 금리"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </TableRow>
 
                 <TableRow>
 
                     <EditText
+                        android:layout_marginTop="20dp"
                         android:id="@+id/interestRate"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:inputType="number" />
 
                     <TextView
+                        android:layout_marginTop="20dp"
                         android:text="%"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </TableRow>
 
                 <TableRow>
 
                     <TextView
+                        android:layout_marginTop="20dp"
                         android:text="상환 방식"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </TableRow>
 
                 <TableRow>
 
                     <Spinner
+                        android:layout_marginTop="20dp"
                         android:id="@+id/payBackMethod"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:textSize="30dp"
                         />
                 </TableRow>
 
