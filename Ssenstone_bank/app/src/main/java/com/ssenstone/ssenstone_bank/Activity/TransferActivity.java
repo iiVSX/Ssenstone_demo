@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class TransferActivity extends AppCompatActivity{
+public class TransferActivity extends AppCompatActivity {
     private static String TAG = "TransferActivity";
     DecimalFormat mDF = new DecimalFormat("###,###,###,###");
     private EditText mAmount, mReceiver_account, mReceiver;
@@ -42,7 +42,7 @@ public class TransferActivity extends AppCompatActivity{
         mTransferButton = findViewById(R.id.do_transfer_button);
 
         String temp = mMyAccount.getText().toString();
-        mMyAccount.setText(temp+myAccount);
+        mMyAccount.setText(temp + myAccount);
 
         set_bank_spinner();
 
@@ -54,7 +54,7 @@ public class TransferActivity extends AppCompatActivity{
         });
     }
 
-    private void set_bank_spinner(){
+    private void set_bank_spinner() {
         ArrayList<String> banks = new ArrayList<>();
         banks.add(getString(R.string.bank_kb));
         banks.add(getString(R.string.bank_shinhan));

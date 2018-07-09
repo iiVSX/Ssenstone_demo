@@ -106,28 +106,6 @@ public class PayActivity  extends AppCompatActivity {
 
         credit_spinner.setAdapter(credit_adapter);
         credit_spinner.setPrompt(getString(R.string.please_choose_card));
-//        credit_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                String selected = parent.getItemAtPosition(position).toString();
-//                if(selected.equals(getString(R.string.credit_kb))){
-//                    Log.d(TAG, selected);
-//                }else if(selected.equals(getString(R.string.credit_samsung))){
-//                    Log.d(TAG, selected);
-//                }else if(selected.equals(getString(R.string.credit_shinhan))){
-//                    Log.d(TAG, selected);
-//                }else if(selected.equals(getString(R.string.credit_woori))){
-//                    Log.d(TAG, selected);
-//                }else{
-//                    Log.d(TAG, "NOTHING");
-//                }
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
     }
 
     private void show_credit_row(){

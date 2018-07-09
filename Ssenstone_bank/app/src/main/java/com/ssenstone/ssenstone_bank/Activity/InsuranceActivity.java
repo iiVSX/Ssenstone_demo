@@ -8,30 +8,38 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.ssenstone.ssenstone_bank.Model.CustomSpinnerAdapter;
 import com.ssenstone.ssenstone_bank.R;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class InsuranceActivity  extends AppCompatActivity {
+public class InsuranceActivity extends AppCompatActivity {
     private static String TAG = "InsuranceActivity";
     private Spinner insuranceName = null;
     private Spinner insuranceType = null;
-    private ArrayAdapter<CharSequence> insuranceNameAdapter = null;
-    private ArrayAdapter<CharSequence> insuranceTypeAdapter = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insurance);
 
-        insuranceName = findViewById(R.id.insuranceName);
-        insuranceNameAdapter = ArrayAdapter.createFromResource(this, R.array.insuranceName ,android.R.layout.simple_spinner_item);
-        insuranceNameAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        insuranceName.setAdapter(insuranceNameAdapter);
+        String[] insurance_names = getResources().getStringArray(R.array.insuranceName);
+        String[] insurance_types = getResources().getStringArray(R.array.insuranceType);
+        ArrayList<String> al_names = new ArrayList<>();
+        ArrayList<String> al_types = new ArrayList<>();
+        Collections.addAll(al_names, insurance_names);
+        Collections.addAll(al_types, insurance_types);
 
+        insuranceName = findViewById(R.id.insuranceName);
         insuranceType = findViewById(R.id.insuranceType);
-        insuranceTypeAdapter = ArrayAdapter.createFromResource(this, R.array.insuranceType ,android.R.layout.simple_spinner_item);
-        insuranceTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        CustomSpinnerAdapter insuranceNameAdapter = new CustomSpinnerAdapter(InsuranceActivity.this, al_names);
+        CustomSpinnerAdapter insuranceTypeAdapter = new CustomSpinnerAdapter(InsuranceActivity.this, al_types);
+
+        insuranceName.setAdapter(insuranceNameAdapter);
         insuranceType.setAdapter(insuranceTypeAdapter);
 
         Button button = findViewById(R.id.apply_insurance);
@@ -42,6 +50,7 @@ public class InsuranceActivity  extends AppCompatActivity {
             }
         });
     }
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));

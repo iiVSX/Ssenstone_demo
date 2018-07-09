@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="paybackWay">
-
         <item>상환1</item>
         <item>상환2</item>
         <item>상환3</item>
